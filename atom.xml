@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://kostafey.github.io/atom.xml" rel="self"/>
+  <link href="http://kostafey.github.io/"/>
+  <updated>2014-07-20T14:29:05+04:00</updated>
+  <id>http://kostafey.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub Notes]]></title>
+    <link href="http://kostafey.github.io/blog/2013/12/01/github-notes/"/>
+    <updated>2013-12-01T18:40:02+04:00</updated>
+    <id>http://kostafey.github.io/blog/2013/12/01/github-notes</id>
+    <content type="html"><![CDATA[<p>Syncing a fork</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git remote add upstream https://github.com/otheruser/repo.git
+</span><span class='line'>git fetch upstream
+</span><span class='line'>git checkout master
+</span><span class='line'>git merge upstream/master
+</span><span class='line'>git push
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Syncing a fork &amp; drop local changes</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git reset --hard HEAD~1
+</span><span class='line'>git push origin +master
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
